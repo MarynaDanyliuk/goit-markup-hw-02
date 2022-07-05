@@ -1,0 +1,105 @@
+header{
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    margin-left: 215px;
+    height: 31px;
+    margin-top: 24px;
+}
+
+.logo2 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin-right: 93px;
+    height: 31px;
+    margin-top: 24px;
+}
+
+.menu{
+   display: flex;
+   margin: 0;
+}
+
+.nav-items{
+    display: flex;
+    list-style-type: none;
+    width: 294px;
+}
+
+.list-items{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 32px;
+}
+
+.nav-items-text{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+    text-decoration: none;
+}
+
+.email{
+    font-family: 'Roboto';sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+    margin-top: 32px;
+    margin-left: 331px;
+    text-decoration: none;
+}
+
+.phonenumber{
+    font-family: 'Roboto';sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    margin-left: 50px;
+    margin-top: 32px;
+    width: 122px;
+    text-decoration: none;
+}
+
+.main-content{
+    width: 1600px;
+    height: 600px;
+    margin-left: 0;
+    margin-top: 80px;
+    background: #2F303A;
+}
+
+.main-content-text{
+    font-family: 'Roboto'; sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 200px;
+}
