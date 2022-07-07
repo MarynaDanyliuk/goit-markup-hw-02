@@ -1,3 +1,9 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+}
+
 body {
     color: #212121;
     font-family: 'Roboto';
@@ -6,19 +12,18 @@ ul {
     list-style: none;
 }
 
+
 /* #212121 цвет заголовков */
 /* #757575 цвет основного текста */
-/* #FFFFFF цвет акцент */
-/* #FFFFFF rgba(255, 255, 255, 0.6) вспомагательный к акцентному цвету */
-/* #2196F3 цвет ссылок и части логотипа */
+/* #FFFFFF цвет Hero */
+/* #FFFFFF rgba(255, 255, 255, 0.6) вспомагательный к Hero цвету */
+/* #2196F3 цвет акцент - ссылок и части логотипа */
 
 /* #E5E5E5 - цвет основного фона*/
 /* #EEEEEE - цвет обводки основных секции */
-/* #2F303A - цвет акцентного фона, темный фон */
+/* #2F303A - цвет фона Hero, темный фон */
 /* #000000 - цвет обводки темного фона */
-
-header{
-}
+/* #2196F3 цвет акцент - кнопка */
 
 .visually-hidden {
     position: absolute;
@@ -35,7 +40,6 @@ header{
 
 .logo {
     font-family: 'Raleway', sans-serif;
-     
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
@@ -59,23 +63,56 @@ margin-top: 24px; */
 }
 
 /*  margin-right: 93px;
- height: 31px;
+height: 31px;
  margin-top: 24px; */
 
  /* site nav */
+.site-nav .link {
+    color: var(--title-text-color);
+}
+.site-nav .link:hover, 
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
 
-.site-nav a {
+.contacts-nav a {
+    color: var(--primary-text-color);
+}
+.contacts-nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero {
 
 }
 
-.contacts a {
-
+.hero-title {
+color: #FFFFFF;
 }
+
+/* Section */
+
+.section-title {
+    color: var(--title-text-color);
+}
+
+/* Features */
+
+.features-list .title {
+    color: var(--title-text-color);
+}
+
+.features-list .description {
+    color: var(--primary-text-color);
+}
+
 
 
 .menu{
-   display: flex;
-   margin: 0;
+    display: flex;
+    margin: 0;
 }
 
 .nav-items{
