@@ -2,9 +2,13 @@
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
+    --primary-bg-color: #FFFFFF;
+    --button-bg-color: #188CE8;
+    --button-text-color: #FFFFFF;
 }
 
 body {
+    background-color: var(--primary-bg-color);
     color: #212121;
     font-family: 'Roboto';
 }
@@ -66,7 +70,7 @@ margin-top: 24px; */
 height: 31px;
  margin-top: 24px; */
 
- /* site nav */
+ /* Site nav */
 .site-nav .link {
     color: var(--title-text-color);
 }
@@ -108,8 +112,33 @@ color: #FFFFFF;
     color: var(--primary-text-color);
 }
 
+/* Projects */
+
+.project-list {
+
+}
+
+/* Team */
+
+.team-list .title {
+color: var(--title-text-color);
+}
+
+.team-list .description {
+    color: var(--primary-text-color);
+}
+
+/* Button */
+.button {
+    color: var(--button-text-color);
+    background-color: var(--button-bg-color);
+}
 
 
+
+
+
+/* Old */
 .menu{
     display: flex;
     margin: 0;
