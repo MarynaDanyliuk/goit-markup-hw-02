@@ -23,7 +23,6 @@ ul {
     list-style: none;
 }
 
-
 /* #212121 цвет заголовков */
 /* #757575 цвет основного текста */
 /* #FFFFFF цвет Hero */
@@ -133,7 +132,6 @@ color: var(--button-text-color);
     color: var(--primary-text-color);
 }
 
-
 /* Team */
 
 .team-list .title {
@@ -149,7 +147,7 @@ line-height: 1.19;
     line-height: 1.19;
 }
 
-/* Footer отредактировать цвет текста с красного на белый и белый прозрачный */
+/* Footer */
 
 .contacts-nav .cont-nav-footer {
     color: rgba(255, 255, 255, 0.6);
