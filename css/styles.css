@@ -1,17 +1,24 @@
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
-    --accent-color: #2196F3;
+    --accent-text-color: #2196F3;
     --primary-bg-color: #FFFFFF;
     --button-bg-color: #188CE8;
     --button-text-color: #FFFFFF;
+    --button-second-bg-color: #F5F4FA;
 }
 
 body {
     background-color: var(--primary-bg-color);
-    color: #212121;
+    color: var(--primary-text-color);
     font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
+
 ul {
     list-style: none;
 }
@@ -27,7 +34,8 @@ ul {
 /* #EEEEEE - цвет обводки основных секции */
 /* #2F303A - цвет фона Hero, темный фон */
 /* #000000 - цвет обводки темного фона */
-/* #2196F3 цвет акцент - кнопка */
+/* #2196F3 цвет акцент - кнопки при hover и focus */
+/* #F5F4FA цвет кнопки фильтра в дефолтном состоянии */
 
 .visually-hidden {
     position: absolute;
@@ -43,12 +51,12 @@ ul {
 }
 
 .logo {
+    color: var(--accent-text-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
     text-decoration: none;
 }
 
@@ -56,14 +64,12 @@ ul {
 height: 31px;
 margin-top: 24px; */
 
-.logo2 {
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    color: #000000;
+.logo.black {
+    color: #000;
+}
+
+.logo.white {
+    color: var(--button-text-color);
 }
 
 /*  margin-right: 93px;
@@ -73,39 +79,54 @@ height: 31px;
  /* Site nav */
 .site-nav .link {
     color: var(--title-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .site-nav .link:hover, 
 .site-nav .link:focus {
-    color: var(--accent-color);
+    color: var(--accent-text-color);
 }
 
-.contacts-nav a {
-    color: var(--primary-text-color);
+.site-nav .link.current {
+    color: var(--accent-text-color);
 }
-.contacts-nav a:hover {
-    color: var(--accent-color);
+
+.contacts-nav .link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.contacts-nav .link:hover, 
+.contacts-nav .link:focus {
+    color: var(--accent-text-color);
 }
 
 /* Hero */
 
-.hero {
-
-}
-
 .hero-title {
-color: #FFFFFF;
+color: var(--button-text-color);
 }
 
 /* Section */
 
 .section-title {
     color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
 }
 
 /* Features */
 
 .features-list .title {
     color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
 }
 
 .features-list .description {
@@ -122,14 +143,60 @@ color: #FFFFFF;
 
 .team-list .title {
 color: var(--title-text-color);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
 }
 
 .team-list .description {
     color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+/* Footer отредактировать цвет текста с красного на белый и белый прозрачный */
+
+.contacts-nav .cont-nav-footer {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address {
+    font-style: normal;
+    color: var(--button-text-color);
 }
 
 /* Button */
-.button {
+.button {   
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.button.primary {
+    color: var(--button-text-color);
+    background-color: var(--button-bg-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+}
+
+.button.primary:hover
+.button.primary:focus {
+    color: var(--button-text-color);
+    background-color: var(--button-bg-color);
+}
+
+.button.secondary {
+    color: var(--title-text-color);
+    background-color: var(--button-second-bg-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
     color: var(--button-text-color);
     background-color: var(--button-bg-color);
 }
