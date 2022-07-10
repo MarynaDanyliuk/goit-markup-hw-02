@@ -133,11 +133,6 @@ color: var(--button-text-color);
     color: var(--primary-text-color);
 }
 
-/* Projects */
-
-.project-list {
-
-}
 
 /* Team */
 
@@ -199,6 +194,15 @@ line-height: 1.19;
 .button.secondary:focus {
     color: var(--button-text-color);
     background-color: var(--button-bg-color);
+}
+
+/* Portfolio */
+
+.portfolio-list .title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
 }
 
 
