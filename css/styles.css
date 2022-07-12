@@ -115,13 +115,20 @@ height: 31px;
   color: var(--accent-txt-color);
 }
 
-.cont-nav-header
-
 /* Hero */
 
 .hero {
   width: 1600px;
   background-color: var(--accent-bg-color);
+}
+.hero-title {
+  color: var(--hero-txt-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em
+  text-transform: uppercase;
 }
 
 /* Section */
@@ -192,6 +199,11 @@ height: 31px;
 }
 .contacts-nav .cont-nav-footer {
   color: var(--address-txt-contacts);
+}
+
+.cont-nav-footer:hover,
+.cont-nav-footer:focus {
+  color: var(--accent-txt-color);
 }
 
 .address {
