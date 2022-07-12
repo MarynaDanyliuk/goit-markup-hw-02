@@ -7,14 +7,17 @@
   --hero-txt-color: #fff;
   --team-bg-color: #f5f4fa;
   --team-card-bg-color: #fff;
+  --portfolio-card-bg-color: #fff;
   --address-txt: #fff;
   --address-txt-contacts: rgba(255, 255, 255, 0.6);
   --accent-bg-color: #2f303a;
   --primary-bg-color: #ffffff;
-  --button-bg-color: #188ce8;
+  --button-bg-color: #2196f3;
+  --button-bg-act-color: #188ce8;
   --button-txt-color: #ffffff;
-  --button-portfolio-bg-color: #f5f4fa;
-  --button-portfolio-txt-color: #000;
+  --button-filter-bg-color: #f5f4fa;
+  --button-filter-txt-color: #000;
+  --button-filter-bg-act-color: #2196f3;
 }
 
 body {
@@ -125,6 +128,7 @@ height: 31px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -165,18 +169,19 @@ height: 31px;
 
 /* Team */
 
-.team-list .title,
-.portfolio-list .title {
+.team-list .title {
   color: var(--title-txt-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 
 .team-list .description {
   color: var(--primary-txt-color);
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 
 .card {
@@ -193,7 +198,6 @@ height: 31px;
 
 .page-footer {
   background-color: var(--accent-bg-color);
-  color: var(--address-txt);
 }
 .contacts-nav .cont-nav-footer {
   color: var(--address-txt-contacts);
@@ -206,7 +210,7 @@ height: 31px;
 
 .address {
   font-style: inherit;
-  color: var(--button-txt-color);
+  color: var(--address-txt);
 }
 
 /* Button */
@@ -226,12 +230,12 @@ height: 31px;
 
 .button.primary:hover .button.primary:focus {
   color: var(--button-txt-color);
-  background-color: var(--button-bg-color);
+  background-color: var(--button-bg-act-color);
 }
 
 .button.secondary {
-  color: var(--button-portfolio-txt-color);
-  background-color: var(--button-portfolio-bg-color);
+  color: var(--button-filter-txt-color);
+  background-color: var(--button-filter-bg-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -241,11 +245,29 @@ height: 31px;
 .button.secondary:hover,
 .button.secondary:focus {
   color: var(--button-txt-color);
-  background-color: var(--button-bg-color);
+  background-color: var(--button-filter-bg-act-color);
 }
 
 /* Portfolio */
 
 .container {
   background-color: var(--primary-bg-color);
+}
+
+.portfolio-list .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-txt-color);
+}
+
+.portfolio-descr {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-txt-color);
+}
+
+.portfolio-card {
+  background-color: var(--portfolio-card-bg-color);
 }
