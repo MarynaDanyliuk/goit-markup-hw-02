@@ -1,11 +1,19 @@
 :root {
+    --logo-black-text: #000;
+    --logo-white-text: #fff;
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-text-color: #2196F3;
+    --hero-text-color: #fff;
+    --team-bg-color: #F5F4FA;
+    --address-txt: #fff;
+    --address-txt-contacts:  rgba(255, 255, 255, 0.6);
+    --accent-bg-color: #2F303A;
     --primary-bg-color: #FFFFFF;
     --button-bg-color: #188CE8;
-    --button-text-color: #FFFFFF;
-    --button-second-bg-color: #F5F4FA;
+    --button-txt-color: #FFFFFF;
+    --button-portfolio-bg-color: #F5F4FA;
+    --button-portfolio-txt-color: #000;
 }
 
 body {
@@ -64,11 +72,11 @@ height: 31px;
 margin-top: 24px; */
 
 .logo.black {
-    color: #000;
+    color: var(--logo-black-text);
 }
 
 .logo.white {
-    color: var(--button-text-color);
+    color: var(--logo-white-text);
 }
 
 /*  margin-right: 93px;
@@ -105,7 +113,9 @@ height: 31px;
 /* Hero */
 
 .hero-title {
-color: var(--button-text-color);
+    color: var(--hero-text-color);
+    background-color: var(--accent-bg-color);
+    text-transform: uppercase;
 }
 
 /* Section */
@@ -147,14 +157,23 @@ line-height: 1.19;
     line-height: 1.19;
 }
 
+.section.team {
+    background-color: var(--team-bg-color);
+}
+
+
 /* Footer */
 
+.page-footer{
+    background-color: var(--accent-bg-color);
+    color: var(--address-txt);
+}
 .contacts-nav .cont-nav-footer {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--address-txt-contacts);
 }
 
 .address {
-    font-style: normal;
+    font-style: inherit;
     color: var(--button-text-color);
 }
 
@@ -165,7 +184,7 @@ line-height: 1.19;
 }
 
 .button.primary {
-    color: var(--button-text-color);
+    color: var(--button-txt-color);
     background-color: var(--button-bg-color);
     font-weight: 700;
     font-size: 16px;
@@ -175,13 +194,13 @@ line-height: 1.19;
 
 .button.primary:hover
 .button.primary:focus {
-    color: var(--button-text-color);
+    color: var(--button-txt-color);
     background-color: var(--button-bg-color);
 }
 
 .button.secondary {
-    color: var(--title-text-color);
-    background-color: var(--button-second-bg-color);
+    color: var(--button-portfolio-txt-color);
+    background-color: var(--button-portfolio-bg-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -190,7 +209,7 @@ line-height: 1.19;
 
 .button.secondary:hover,
 .button.secondary:focus {
-    color: var(--button-text-color);
+    color: var(--button-txt-color);
     background-color: var(--button-bg-color);
 }
 
